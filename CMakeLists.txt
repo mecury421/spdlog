@@ -5,7 +5,7 @@
 
 cmake_minimum_required(VERSION 3.1)
 project(spdlog VERSION 0.14.0)
-include(CTest)
+#include(CTest)
 include(CMakeDependentOption)
 include(GNUInstallDirs)
 
@@ -112,5 +112,5 @@ export(
 # register project in CMake user registry
 export(PACKAGE ${PROJECT_NAME})
 
-file(GLOB_RECURSE spdlog_include_SRCS "${HEADER_BASE}/*.h")
-add_custom_target(spdlog_headers_for_ide SOURCES ${spdlog_include_SRCS})
+#file(GLOB_RECURSE spdlog_include_SRCS "${HEADER_BASE}/*.h")
+#add_custom_target(spdlog_headers_for_ide SOURCES ${spdlog_include_SRCS})
